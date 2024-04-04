@@ -47,5 +47,14 @@
     background-color: #A4EBF3; /* Change to a lighter blue on hover */
 }
 
+#particles-js {
+    width: 100%;
+    height: 100vh; /* This will make sure your particles cover the full hero section */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+
 /* If you want to include some interactive elements like particles or animated icons */
 /* you could add them here with additional HTML and CSS, or utilize a JavaScript library like particles.js */
