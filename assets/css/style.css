@@ -1,54 +1,70 @@
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Add this at the top of your CSS file to import the 'Poppins' font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7; /* Light grey background */
+    color: #333; /* Dark grey text for readability */
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0 15px;
+    background-color: #1a73e8; /* Strong blue background for the header */
+    padding: 1rem 0; /* Padding above and below the navigation links */
 }
 
 nav ul {
+    list-style-type: none;
     padding: 0;
-    list-style: none;
+    margin: 0;
     text-align: center;
 }
 
 nav ul li {
     display: inline;
+    margin-right: 20px;
 }
 
-main {
-    padding: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem; /* Padding around the links */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
 }
 
+nav ul li a:hover {
+    background-color: #0c5498; /* Darker blue on hover */
+}
+
+/* Container for each section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 2rem; /* Padding inside the container */
+}
+
+h1, h2 {
+    color: #1a73e8; /* Blue color for headings */
+}
+
+/* ... rest of your styles ... */
+
+/* Footer styles */
 footer {
-    background: #333;
-    color: #fff;
+    background: #333; /* Dark footer */
+    color: white;
     text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem 0;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        padding: 1rem; /* Less padding on smaller screens */
     }
 }
