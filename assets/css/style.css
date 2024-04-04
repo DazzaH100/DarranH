@@ -1,46 +1,51 @@
-/* Add this at the top of your CSS file to import the 'Poppins' font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #151515; /* Light grey background */
-    color: #333; /* Dark grey text for readability */
-}
+/* Add to your styles.css */
 
 .hero {
-    background: url('path-to-your-background-image.jpg') no-repeat center center fixed; 
+    background: linear-gradient(45deg, #000000, #434343, #236B8E, #0F9B8E);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Use a full view height for the hero section */
+    color: #ffffff;
     text-align: center;
-    color: #fff; /* Adjust the color to suit your design */
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-content h1 {
-    font-size: 3rem; /* Large font size for the main heading */
-    margin-bottom: 0.5rem;
+    font-size: 3rem; /* Adjust size as needed */
+    color: #fff; /* White text for contrast */
 }
 
 .hero-content p {
-    font-size: 1.5rem; /* Smaller font size for the subtitle */
-    margin-bottom: 2rem;
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin: 1rem 0;
+    color: #B8B8D1; /* Lighter text color for subtitle */
 }
 
-.btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #06bcee; /* Use a bright color for the button */
+.btn-cta {
+    padding: 10px 20px;
+    background-color: #6A82FB; /* A vibrant blue for the CTA button */
     color: white;
-    text-transform: uppercase;
-    font-weight: bold;
     text-decoration: none;
-    border-radius: 2px;
-    transition: background-color 0.3s;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
 }
 
-.btn:hover {
-    background-color: #005f73; /* Darker shade on hover for the button */
+.btn-cta:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    background-color: #A4EBF3; /* Change to a lighter blue on hover */
 }
+
+/* If you want to include some interactive elements like particles or animated icons */
+/* you could add them here with additional HTML and CSS, or utilize a JavaScript library like particles.js */
