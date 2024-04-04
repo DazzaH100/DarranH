@@ -68,3 +68,39 @@ footer {
         padding: 1rem; /* Less padding on smaller screens */
     }
 }
+
+.hero {
+    background: url('path-to-your-background-image.jpg') no-repeat center center fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Use a full view height for the hero section */
+    text-align: center;
+    color: #fff; /* Adjust the color to suit your design */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Large font size for the main heading */
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Smaller font size for the subtitle */
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #06bcee; /* Use a bright color for the button */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005f73; /* Darker shade on hover for the button */
+}
